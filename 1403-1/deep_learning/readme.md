@@ -33,9 +33,9 @@ The perceptron is a type of machine learning algorithm for **supervised learning
 
 1. **مقداردهی اولیه:**
 
-   $$
+   ```math
    w = \begin{pmatrix} 0 \\ 0 \end{pmatrix}, \quad b = 0
-   $$
+   ```
 
 2. **الگوریتم پرسپترون:**
 
@@ -43,12 +43,12 @@ The perceptron is a type of machine learning algorithm for **supervised learning
 
 3. **قانون به‌روزرسانی:**
 
-   $$
-   w_{\text{جدید}} = w_{\text{قدیم}} + y_i x_i
-   $$
-   $$
-   b_{\text{جدید}} = b_{\text{قدیم}} + y_i
-   $$
+   ```math
+   w_{new} = w_{old} + y_i x_i
+   ```
+   ```math
+   b_{new} = b_{old} + y_i
+   ```
 
 4. **تکرارها:**
 
@@ -56,40 +56,40 @@ The perceptron is a type of machine learning algorithm for **supervised learning
 
    - **نقطه $p_1$:**
 
-     $$
-     \text{خروجی} = \text{علامت}(w^T x_1 + b) = \text{علامت}(0 + 0) = 0
-     $$
+     ```math
+     output = sign(w^T x_1 + b) = sign(0 + 0) = 0
+     ```
 
      چون $0 \neq y_1$، نیاز به به‌روزرسانی داریم.
 
-     $$
+     ```math
      w = w + y_1 x_1 = \begin{pmatrix} 0 \\ 0 \end{pmatrix} + (+1) \begin{pmatrix} 2 \\ 3 \end{pmatrix} = \begin{pmatrix} 2 \\ 3 \end{pmatrix}
-     $$
-     $$
+     ```
+     ```math
      b = b + y_1 = 0 + (+1) = +1
-     $$
+     ```
 
    - **نقطه $p_2$:**
 
-     $$
-     \text{خروجی} = \text{علامت}(w^T x_2 + b) = \text{علامت}(2 \times 3 + 3 \times 5 + 1) = \text{علامت}(22) = +1
-     $$
+     ```math
+     output = sign(w^T x_2 + b) = sign(2 \times 3 + 3 \times 5 + 1) = sign(22) = +1
+     ```
 
      درست طبقه‌بندی شده است.
 
    - **نقطه $p_3$:**
 
-     $$
-     \text{خروجی} = \text{علامت}(w^T x_3 + b) = \text{علامت}(2 \times (-1) + 3 \times (-1) + 1) = \text{علامت}(-4) = -1
-     $$
+     ```math
+     output = sign(w^T x_3 + b) = sign(2 \times (-1) + 3 \times (-1) + 1) = sign(-4) = -1
+     ```
 
      درست طبقه‌بندی شده است.
 
    - **نقطه $p_4$:**
 
-     $$
-     \text{خروجی} = \text{علامت}(w^T x_4 + b) = \text{علامت}(2 \times (-2) + 3 \times (-3) + 1) = \text{علامت}(-12) = -1
-     $$
+     ```math
+     output = sign(w^T x_4 + b) = sign(2 \times (-2) + 3 \times (-3) + 1) = sign(-12) = -1
+     ```
 
      درست طبقه‌بندی شده است.
 
@@ -101,15 +101,15 @@ The perceptron is a type of machine learning algorithm for **supervised learning
 
 وزن‌های نهایی:
 
-$$
+```math
 w = \begin{pmatrix} 2 \\ 3 \end{pmatrix}
-$$
+```
 
 بایاس نهایی:
 
-$$
+```math
 b = +1
-$$
+```
 
 ---
 
