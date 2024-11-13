@@ -33,9 +33,7 @@ The perceptron is a type of machine learning algorithm for **supervised learning
 
 1. **مقداردهی اولیه:**
 
-   ```math
-   w = \begin{pmatrix} 0 \\ 0 \end{pmatrix}, \quad b = 0
-   ```
+   w = [0, 0], b = 0
 
 2. **الگوریتم پرسپترون:**
 
@@ -43,53 +41,39 @@ The perceptron is a type of machine learning algorithm for **supervised learning
 
 3. **قانون به‌روزرسانی:**
 
-   ```math
-   w_{new} = w_{old} + y_i x_i
-   ```
-   ```math
-   b_{new} = b_{old} + y_i
-   ```
+   w_new = w_old + y_i * x_i
+   
+   b_new = b_old + y_i
 
 4. **تکرارها:**
 
    **تکرار اول:**
 
-   - **نقطه $p_1$:**
+   - **نقطه p₁:**
 
-     ```math
-     output = sign(w^T x_1 + b) = sign(0 + 0) = 0
-     ```
+     output = sign(w·x₁ + b) = sign(0 + 0) = 0
 
-     چون $0 \neq y_1$، نیاز به به‌روزرسانی داریم.
+     چون 0 ≠ y₁، نیاز به به‌روزرسانی داریم.
 
-     ```math
-     w = w + y_1 x_1 = \begin{pmatrix} 0 \\ 0 \end{pmatrix} + (+1) \begin{pmatrix} 2 \\ 3 \end{pmatrix} = \begin{pmatrix} 2 \\ 3 \end{pmatrix}
-     ```
-     ```math
-     b = b + y_1 = 0 + (+1) = +1
-     ```
+     w = [0, 0] + 1 * [2, 3] = [2, 3]
+     
+     b = 0 + 1 = +1
 
-   - **نقطه $p_2$:**
+   - **نقطه p₂:**
 
-     ```math
-     output = sign(w^T x_2 + b) = sign(2 \times 3 + 3 \times 5 + 1) = sign(22) = +1
-     ```
+     output = sign(w·x₂ + b) = sign(2×3 + 3×5 + 1) = sign(22) = +1
 
      درست طبقه‌بندی شده است.
 
-   - **نقطه $p_3$:**
+   - **نقطه p₃:**
 
-     ```math
-     output = sign(w^T x_3 + b) = sign(2 \times (-1) + 3 \times (-1) + 1) = sign(-4) = -1
-     ```
+     output = sign(w·x₃ + b) = sign(2×(-1) + 3×(-1) + 1) = sign(-4) = -1
 
      درست طبقه‌بندی شده است.
 
-   - **نقطه $p_4$:**
+   - **نقطه p₄:**
 
-     ```math
-     output = sign(w^T x_4 + b) = sign(2 \times (-2) + 3 \times (-3) + 1) = sign(-12) = -1
-     ```
+     output = sign(w·x₄ + b) = sign(2×(-2) + 3×(-3) + 1) = sign(-12) = -1
 
      درست طبقه‌بندی شده است.
 
@@ -100,16 +84,10 @@ The perceptron is a type of machine learning algorithm for **supervised learning
 ### نتیجه 🎯
 
 وزن‌های نهایی:
-
-```math
-w = \begin{pmatrix} 2 \\ 3 \end{pmatrix}
-```
+w = [2, 3]
 
 بایاس نهایی:
-
-```math
 b = +1
-```
 
 ---
 
