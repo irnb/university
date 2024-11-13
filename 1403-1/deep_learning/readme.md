@@ -41,9 +41,9 @@ The perceptron is a type of machine learning algorithm for **supervised learning
 
 3. **قانون به‌روزرسانی:**
 
-   w_new = w_old + y_i * x_i
+   `w_new = w_old + y_i * x_i`
    
-   b_new = b_old + y_i
+   `b_new = b_old + y_i`
 
 4. **تکرارها:**
 
@@ -51,31 +51,25 @@ The perceptron is a type of machine learning algorithm for **supervised learning
 
    - **نقطه p₁:**
 
-     output = sign(w·x₁ + b) = sign(0 + 0) = 0
+     `output = sign(w·x₁ + b) = sign(0 + 0) = 0`
 
      چون 0 ≠ y₁، نیاز به به‌روزرسانی داریم.
 
-     w = [0, 0] + 1 * [2, 3] = [2, 3]
+     `w = [0, 0] + 1 * [2, 3] = [2, 3]`
      
-     b = 0 + 1 = +1
+     `b = 0 + 1 = +1`
 
    - **نقطه p₂:**
 
-     output = sign(w·x₂ + b) = sign(2×3 + 3×5 + 1) = sign(22) = +1
-
-     درست طبقه‌بندی شده است.
+     `output = sign(w·x₂ + b) = sign(2×3 + 3×5 + 1) = sign(22) = +1`
 
    - **نقطه p₃:**
 
-     output = sign(w·x₃ + b) = sign(2×(-1) + 3×(-1) + 1) = sign(-4) = -1
-
-     درست طبقه‌بندی شده است.
+     `output = sign(w·x₃ + b) = sign(2×(-1) + 3×(-1) + 1) = sign(-4) = -1`
 
    - **نقطه p₄:**
 
-     output = sign(w·x₄ + b) = sign(2×(-2) + 3×(-3) + 1) = sign(-12) = -1
-
-     درست طبقه‌بندی شده است.
+     `output = sign(w·x₄ + b) = sign(2×(-2) + 3×(-3) + 1) = sign(-12) = -1`
 
 تمام نقاط به درستی طبقه‌بندی شدند، بنابراین الگوریتم متوقف می‌شود.
 
